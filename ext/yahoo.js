@@ -70,3 +70,5 @@ YAHOO.lang = {
 	}
     }
 };
+
+module.exports.YAHOO = YAHOO;

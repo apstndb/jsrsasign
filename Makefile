@@ -61,5 +61,5 @@ min/%.min.js: src/%.js
 
 ext/%-min.js: ext/%.js
 	yuicmp $^ -o $@
-lib/jsrsasign.js: npm2/header.js ext/yahoo.js $(FILES) npm/lib/footer.js
+lib/jsrsasign.js: npm2/header.js $(FILES) npm/lib/footer.js
 	cat $^ > $@
