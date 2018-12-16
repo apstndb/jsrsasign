@@ -1,0 +1,11 @@
+{
+  "name": "jsbn",
+  "version": "1.4.0",
+  "description": "Tom Wu's pure JavaScript implementation of arbitrary-precision integer arithmetic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
