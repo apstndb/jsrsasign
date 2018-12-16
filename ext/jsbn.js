@@ -6,6 +6,8 @@
 
 // Basic JavaScript BN library - subset useful for RSA encryption.
 
+var navigator = {};
+
 // Bits per digit
 var dbits;
 
@@ -559,3 +561,7 @@ BigInteger.prototype.modPowInt = bnModPowInt;
 // "constants"
 BigInteger.ZERO = nbv(0);
 BigInteger.ONE = nbv(1);
+
+module.exports.BigInteger = BigInteger;
+module.exports.nbv = nbv;
+module.exports.nbi = nbi;

@@ -9,6 +9,8 @@
 // Version 1.1: new BigInteger("0", 10) returns "proper" zero
 // Version 1.2: square() API, isProbablePrime fix
 
+const {nbv, nbi, BigInteger} = require("./jsbn");
+
 // (public)
 function bnClone() { var r = nbi(); this.copyTo(r); return r; }
 
@@ -656,3 +658,4 @@ BigInteger.prototype.square = bnSquare;
 // int hashCode()
 // long longValue()
 // static BigInteger valueOf(long val)
+module.exports.BigInteger = BigInteger;

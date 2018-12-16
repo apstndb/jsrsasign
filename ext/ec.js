@@ -9,6 +9,8 @@
 // ----------------
 // ECFieldElementFp
 
+var {BigInteger} = require("./jsbn");
+
 // constructor
 function ECFieldElementFp(q,x) {
     this.x = x;
@@ -316,3 +318,7 @@ ECCurveFp.prototype.equals = curveFpEquals;
 ECCurveFp.prototype.getInfinity = curveFpGetInfinity;
 ECCurveFp.prototype.fromBigInteger = curveFpFromBigInteger;
 ECCurveFp.prototype.decodePointHex = curveFpDecodePointHex;
+
+module.exports.ECCurveFp = ECCurveFp;
+module.exports.ECFieldElementFp = ECFieldElementFp;
+module.exports.ECPointFp = ECPointFp;

@@ -72,3 +72,7 @@ function b64toBA(s) {
   }
   return a;
 }
+
+module.exports.b64tohex = b64tohex;
+module.exports.b64toBA = b64toBA;
+module.exports.hex2b64 = hex2b64;

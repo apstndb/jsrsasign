@@ -210,3 +210,5 @@ RSAKey.prototype.encryptOAEP = RSAEncryptOAEP;
 //RSAKey.prototype.encrypt_b64 = RSAEncryptB64;
 
 RSAKey.prototype.type = "RSA";
+
+module.exports.RSAKey = RSAKey;

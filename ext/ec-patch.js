@@ -5,6 +5,9 @@
  *
  * version 1.0.0 is the original of bitcoin-lib/ecdsa.js
  */
+
+const {ECCurveFp, ECFieldElementFp, ECPointFp} = require("./ec");
+
 ECFieldElementFp.prototype.getByteLength = function () {
   return Math.floor((this.toBigInteger().bitLength() + 7) / 8);
 };
@@ -207,3 +210,5 @@ ECPointFp.prototype.validate = function () {
 
   return true;
 };
+
+module.exports.ECCurveFp = ECCurveFp;
